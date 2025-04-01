@@ -52,21 +52,6 @@ By automating contract classification, this system enhances accuracy, reduces ma
 
 ## Comparative Analysis:
 
-### Language Models
-| Model  | Precision | Recall | F1 Score | Accuracy | MCC |
-|--------|-----------|--------|----------|----------|-----|
-| BERT   | 0.60      | 0.38   | 0.46     | 0.72     | 0.723 |
-| RoBERTa| 1.00      | 1.00   | 1.00     | 0.98     | 0.98  |
-
-### Deep Learning
-| Model | Embedding | Accuracy | Precision | Recall | F1-Score |
-|-------|-----------|----------|-----------|--------|----------|
-| CNN   | Word Embeddings | 0.9756 | 0.9756 | 0.9756 | 0.9756 |
-| CNN   | TF-IDF | 0.9756 | 0.9756 | 0.9756 | 0.9756 |
-| LSTM  | Word Embeddings | 0.9756 | 0.9756 | 0.9756 | 0.9757 |
-| LSTM  | BoW | 0.9756 | 0.9756 | 0.9756 | 0.9757 |
-| BiLSTM | Word Embeddings | 0.9865 | 0.9860 | 0.9869 | 0.9864 |
-
 ### Machine Learning
 | No. | Model Name | Settings / Hyperparameters | Feature | Precision | Recall | F1 Score | Accuracy |
 |----|------------|---------------------------|---------|-----------|--------|----------|----------|
@@ -81,6 +66,21 @@ By automating contract classification, this system enhances accuracy, reduces ma
 | 9  | K-Nearest Neighbors | K=5, Distance: Euclidean | BoW | 0.77 | 0.78 | 0.77 | 0.78 |
 | 10 | K-Nearest Neighbors | K=10, Distance: Manhattan | BoW+NLP | 0.79 | 0.80 | 0.79 | 0.80 |
 | 11 | Naive Bayes | No Smoothing | BoW | 0.71 | 0.72 | 0.71 | 0.72 |
+
+### Deep Learning
+| Model | Embedding | Accuracy | Precision | Recall | F1-Score |
+|-------|-----------|----------|-----------|--------|----------|
+| CNN   | Word Embeddings | 0.9756 | 0.9756 | 0.9756 | 0.9756 |
+| CNN   | TF-IDF | 0.9756 | 0.9756 | 0.9756 | 0.9756 |
+| LSTM  | Word Embeddings | 0.9756 | 0.9756 | 0.9756 | 0.9757 |
+| LSTM  | BoW | 0.9756 | 0.9756 | 0.9756 | 0.9757 |
+| BiLSTM | Word Embeddings | 0.9865 | 0.9860 | 0.9869 | 0.9864 |
+
+### Language Models
+| Model  | Precision | Recall | F1 Score | Accuracy | MCC |
+|--------|-----------|--------|----------|----------|-----|
+| BERT   | 0.60      | 0.38   | 0.46     | 0.72     | 0.723 |
+| RoBERTa| 0.97      | 0.97   | 0.97     | 0.98     | 0.98  |
 
 ## Conclusion:
 This project successfully automates the classification of financial contract clauses, addressing the inefficiencies and inaccuracies of manual review. By leveraging text preprocessing techniques, feature extraction, and supervised learning models, the system accurately categorizes clauses into high risk, standard, and beneficial. This automation not only enhances the accuracy and consistency of financial risk assessment but also reduces the manual workload for analysts. As a result, financial institutions can improve decision-making, streamline compliance monitoring, and mitigate risks more effectively. Future improvements could involve expanding the dataset, integrating advanced NLP techniques, and refining classification models for even greater precision.
